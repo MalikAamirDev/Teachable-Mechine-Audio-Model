@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice Model</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-8 max-w-md text-center">
+      <h1 class="text-2xl font-bold mb-4">Voice Model</h1>
+      <div class="text-center mb-8">
+        <p>Welcome to the Teachable Machine Audio Model!</p>
+        <p>
+          Teachable Machine is an amazing tool for training voice models. I'm
+          using it to recognize the voices of two birds, the Koyal and the
+          Rooster, while accounting for background noise. It's an efficient and
+          user-friendly platform for training audio recognition models.
+        </p>
+      </div>
+      <div class="flex justify-center mb-8">
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded"
+          type="button"
+          onclick="init()"
+        >
+          Start
+        </button>
+      </div>
+      <div class="text-center" id="label-container"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
